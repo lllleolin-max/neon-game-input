@@ -1,0 +1,14 @@
+[
+  {"seq":1,"at":0,"now":0,"expect":{"usable":true,"fresh":true,"ready":false,"credit":0}},
+  {"seq":2,"at":0.05,"now":0.05,"expect":{"ready":false,"credit":0}},
+  {"seq":3,"at":0.10,"now":0.10,"expect":{"ready":true,"credit":0.05}},
+  {"seq":3,"at":0.10,"now":0.13,"expect":{"fresh":false,"ready":true,"credit":0}},
+  {"seq":4,"at":0.14,"now":0.14,"valid":false,"expect":{"usable":false,"ready":false,"credit":0}},
+  {"seq":5,"at":0.18,"now":0.18,"expect":{"fresh":true,"ready":false,"credit":0}},
+  {"seq":6,"at":0.23,"now":0.23,"expect":{"ready":false,"credit":0}},
+  {"seq":7,"at":0.28,"now":0.28,"expect":{"ready":true,"credit":0.05}},
+  {"seq":7,"at":0.28,"now":0.50,"expect":{"usable":false,"reason":"stale_sample","credit":0}},
+  {"seq":8,"at":0.51,"now":0.51,"expect":{"ready":false,"credit":0}},
+  {"seq":9,"at":0.50,"now":0.52,"expect":{"usable":false,"reason":"nonmonotonic_sample","credit":0}},
+  {"seq":10,"at":0.60,"now":10,"valid":false,"expect":{"usable":false,"reason":"invalid_sample","credit":0}}
+]

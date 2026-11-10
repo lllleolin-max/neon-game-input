@@ -1,0 +1,12 @@
+include LICENSE THIRD_PARTY.md README.md README.en.md CHANGELOG.md CONTRIBUTING.md AGENTS.md
+recursive-include LICENSES *.txt
+recursive-include docs *.md *.png *.jpg
+recursive-include .github *.yml
+include .gitignore
+recursive-include examples *.py
+recursive-include tools *.py
+recursive-include tests *.py *.mjs *.json
+recursive-include src/neon_game_input/assets *.png
+recursive-include src/neon_game_input/browser *.html *.css *.mjs
+include *.cmd
+include requirements-windows-py312.lock.txt
